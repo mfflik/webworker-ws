@@ -24,7 +24,7 @@ const sendData = (ws) => {
     // console.log(`Sent stn: ${currentStn}`);
 
     // Update nilai stn untuk pengiriman berikutnya
-    currentStn = currentStn < 1000 ? currentStn + 1 : 1;  // Jika sudah mencapai 10000, mulai lagi dari 1
+    currentStn = currentStn < 10000 ? currentStn + 1 : 1;  // Jika sudah mencapai 10000, mulai lagi dari 1
 
     // Jika currentStn mencapai 10000, beri jeda 1 detik sebelum mengulang
     if (currentStn === 1) {
