@@ -44,7 +44,7 @@ async fn handle_connection(stream: tokio::net::TcpStream) {
     loop {
         let data = Data {
             bearing: rand::random::<f64>() * 360.0,
-            range: rand::random::<f64>() * 1000.0,
+            range: rand::random::<f64>() * 1000000000.0,
             stn,
             category: rand::random::<u32>() % 10,
             general_type: rand::random::<u32>() % 5,
